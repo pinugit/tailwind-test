@@ -1,7 +1,7 @@
 import "./App.css";
-import HomeSearch from "./components/sidebar/HomeSearch";
+import SideBar from "./components/sidebar/SideBar";
 
 function App() {
-  return <HomeSearch onSelectingItem={(item) => console.log(item)} />;
+  return <SideBar />;
 }
 export default App;

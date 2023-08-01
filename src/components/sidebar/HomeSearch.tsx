@@ -8,7 +8,7 @@ interface props {
 const HomeSearch = ({ onSelectingItem }: props) => {
   const [whichActive, setWhichActive] = useState("");
   return (
-    <ul className="flex flex-col bg-primary rounded-md h-32 w-60 gap-5 justify-center">
+    <ul className="flex flex-col bg-primary rounded-md h-32 min-w-content gap-5 justify-center">
       <li
         onClick={() => {
           console.log("Home");

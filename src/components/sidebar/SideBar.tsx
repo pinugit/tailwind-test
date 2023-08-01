@@ -1,12 +1,16 @@
 import HomeSearch from "./HomeSearch";
 
-const SideBar = () => {
+const Sidebar = () => {
+  const handleSelectItem = (item: string) => {
+    console.log(item); // Replace with your desired logic
+  };
+
   return (
-    <div className="flex-col w-60 h-screen gap-3">
-      <HomeSearch onSelectingItem={(item) => console.log(item)} />
-      <div className="grow bg-slate-600 min-w-60 "></div>
+    <div className="flex flex-col gap-2 min-w-[240px] h-screen">
+      <HomeSearch onSelectingItem={handleSelectItem} />
+      <h1 className="grow bg-gray-950 text-cyan-200">lower-sidebar</h1>
     </div>
   );
 };
 
-export default SideBar;
+export default Sidebar;
